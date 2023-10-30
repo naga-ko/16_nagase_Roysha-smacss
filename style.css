@@ -11,6 +11,7 @@ body {
 }
 
 img {
+    display: inline-block;
     max-width: 100%;
     height: auto;
     vertical-align: bottom;
@@ -50,6 +51,14 @@ ul {
     align-items: center;
 }
 
+.l-flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.l-items-stretch {
+    align-items: stretch;
+}
+
 .l-max-w {
     max-width: 700px;
     margin-left: auto;
@@ -64,6 +73,16 @@ ul {
 
 .l-bg-sky {
     background-color: #F7FAFF;
+}
+
+.l-bg-gray {
+    color: #fff;
+    background-color: #505050;
+}
+
+.l-bg-blue .unit-title,
+.l-bg-gray .unit-title {
+    color: #fff;
 }
 
 /* 余白 */
@@ -92,8 +111,17 @@ ul {
     text-align: center;
 }
 
+.l-text-center .btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .l-text-right {
     text-align: right;
+}
+
+.l-text-right .btn {
+    margin-left: auto;
 }
 
 /* モジュール
@@ -118,7 +146,7 @@ ul {
     margin-bottom: 40px;
 }
 
-.unit>p:last-child {
+.unit :last-child {
     margin-bottom: 0;
 }
 
@@ -131,10 +159,18 @@ ul {
     line-height: 1.3;
 }
 
+.card :last-child {
+    margin-bottom: 0;
+}
 
 .card--space {
     padding: 40px 60px;
     background-color: #fff;
+}
+
+.card--border {
+    padding: 40px;
+    border: 1px solid;
 }
 
 /* btn */
@@ -153,5 +189,14 @@ ul {
 }
 
 .btn--info {
-    background-color: #2dbe61;
+    background-color: #2DBE61;
+}
+
+.btn--more {
+    background-color: #F87624;
+}
+
+.btn--outline {
+    background-color: transparent;
+    border: 1px solid;
 }
